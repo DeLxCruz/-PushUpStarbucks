@@ -48,9 +48,11 @@
     <main>
         <section class="lg:pt-[80px] flex lg:flex-row lg:justify-between xs:flex-col xs:pt-8 xs:px-6">
             <div class="lg:pl-20 text-[#006241] lg:pt-[120px] xs:pt-2 xs:pl-0">
-                <h1 class="lg:text-5xl lg:text-left lg:pb-[100px] xs:text-3xl xs:pb-8 xs:text-center">Green Tea
+                <h1 id="mainTitle" class="lg:text-5xl lg:text-left lg:pb-[100px] xs:text-3xl xs:pb-8 xs:text-center">
+                    Green Tea
                     Frappuccino</h1>
-                <p class="lg:text-lg lg:w-[800px] xs:w-auto xs:text-base">Bebida licuada de Té matcha, mezclado con
+                <p id="mainDescription" class="lg:text-lg lg:w-[800px] xs:w-auto xs:text-base">Bebida licuada de Té
+                    matcha, mezclado con
                     jarabe
                     clásico, hielo y leche de
                     tu
@@ -76,10 +78,15 @@
             </div>
             </div>
         </section>
-        <div class="flex gap-4">
-            <div><img onclick="changeImage('./../assets/img/img1.png')" src="./../assets/img/img1.png" alt="" class="w-[46px] lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer"></div>
-            <div><img onclick="changeImage('./../assets/img/img2.png')" src="./../assets/img/img2.png" alt="" class="w-[46px] lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer"></div>
-            <div><img onclick="changeImage('./../assets/img/img3.png')" src="./../assets/img/img3.png" alt="" class="w-[46px] lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer"></div>
+        <div class="flex gap-4 absolute right-[45%]">
+            <div><img
+                    onclick="changeContent('./../assets/img/img1.png', 'Green Tea Frappuccino', 'Bebida licuada de Té matcha, mezclado con jarabe clásico, hielo y leche de tu preferencia, terminada con crema batida')"
+                    src="./../assets/img/img1.png" alt=""
+                    class="w-[46px] lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer"></div>
+            <div><img onclick="changeContent('./../assets/img/img2.png', 'Fresa Cream Frappuccino', 'Una nueva forma de tomar una bebida frappé de fresa, mezclada con hielo y leche, terminada con crema batida y salsa de fresa.')" src="./../assets/img/img2.png" alt=""
+                    class="w-[46px] lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer"></div>
+            <div><img onclick="changeContent('./../assets/img/img3.png', 'Mango Dragonfrutit', 'Refrescante mezcla tropical que combina el sabor del mango dulce y el exotico dragonfruit, con extracto de café verde y terminada con trozos de dragonfruit.')" src="./../assets/img/img3.png" alt=""
+                    class="w-[46px] lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer"></div>
         </div>
     </main>
 </body>

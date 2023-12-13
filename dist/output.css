@@ -552,6 +552,46 @@ video {
   position: relative;
 }
 
+.right-44 {
+  right: 11rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.right-\[300px\] {
+  right: 300px;
+}
+
+.right-\[600px\] {
+  right: 600px;
+}
+
+.right-\[80px\] {
+  right: 80px;
+}
+
+.right-\[800px\] {
+  right: 800px;
+}
+
+.right-\[50\%\] {
+  right: 50%;
+}
+
+.right-\[53\%\] {
+  right: 53%;
+}
+
+.right-\[\%\] {
+  right: %;
+}
+
+.right-\[45\%\] {
+  right: 45%;
+}
+
 .z-0 {
   z-index: 0;
 }
