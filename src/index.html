@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./../assets/favicon.ico">
+    <link rel="stylesheet" href="/dist/output.css">
+    <script src="./main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <title>Strabucks - Home</title>
+</head>
+
+<body class="font-sans overflow-hidden w-screen h-screen bg-[#f2f0eb]">
+    <header>
+        <div class="lg:w-full flex justify-between items-center pt-4 px-6">
+            <img src="./../assets/img/logo.png" alt="" class="pl-6 lg:w-[90px] xs:w-[40px] xs:pl-0">
+
+            <!-- Botón de menú hamburguesa visible en dispositivos pequeños -->
+            <button id="menu-toggle" class="lg:hidden">
+                <img src="./../assets/img/menu-svgrepo-com.svg" class="w-[24px]" alt="Menú">
+            </button>
+
+            <!-- Menú de navegación visible en dispositivos grandes -->
+            <div class="hidden lg:flex gap-x-14">
+                <ul class="lg:flex lg:gap-x-14">
+                    <li><a href="./index.html" class="text-[#006241]">Inicio</a></li>
+                    <li><a href="https://www.starbucks.com.co/menu" class="text-[#006241]">Menú</a></li>
+                    <li><a href="https://www.starbucks.com.co/seccion/novedades" class="text-[#006241]">Novedades</a>
+                    </li>
+                    <li><a href="https://www.starbucks.com.co/stores" class="text-[#006241]">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Menú de navegación para dispositivos pequeños (oculto por defecto) -->
+        <div id="nav-menu" class="lg:hidden flex flex-col items-center gap-4 pr-8" style="display: none;">
+            <ul class="flex flex-col gap-3">
+                <li><a href="./index.html" class="text-[#006241]">Inicio</a></li>
+                <li><a href="https://www.starbucks.com.co/menu" class="text-[#006241]">Menú</a></li>
+                <li><a href="https://www.starbucks.com.co/seccion/novedades" class="text-[#006241]">Novedades</a></li>
+                <li><a href="https://www.starbucks.com.co/stores" class="text-[#006241]">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="lg:pt-[80px] flex lg:flex-row lg:justify-between xs:flex-col xs:pt-8 xs:px-6">
+            <div class="lg:pl-20 text-[#006241] lg:pt-[120px] xs:pt-2 xs:pl-0">
+                <h1 class="lg:text-5xl lg:text-left lg:pb-[100px] xs:text-3xl xs:pb-8 xs:text-center">Green Tea
+                    Frappuccino</h1>
+                <p class="lg:text-lg lg:w-[800px] xs:w-auto xs:text-base">Bebida licuada de Té matcha, mezclado con
+                    jarabe
+                    clásico, hielo y leche de
+                    tu
+                    preferencia, terminada con crema batida.</p>
+            </div>
+            <div class="relative xs:pt-8">
+                <div
+                    class="bg-[#006241] lg:w-[850px] lg:h-[850px] rounded-full z-0 absolute xs:w-[380px] xs:h-[380px] xs:right-32 xs:top-16 lg:-left-10 lg:top-20 2xl:-left-20 2xl:top-12">
+                </div>
+                <div class="flex lg:items-center xs:justify-between">
+                    <img id="mainImage" src="./../assets/img/img1.png" alt=""
+                        class="relative z-10 lg:w-auto xs:w-[250px] transform xs:scale-x-[-1] lg:scale-x-[1] xs:scale-x-1 xs:right-10 lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer">
+                    <ul
+                        class="z-10 py-2 px-1 bg-[#d4e9e2] rounded-lg flex flex-col items-center gap-4 mr-3 xs:mr-0 xs:-right-6 xs:absolute">
+                        <li><a href=""><img src="./../assets/img/facebook-svgrepo-com.svg" alt="" srcset=""
+                                    class="lg:w-[46px] xs:w-[32px]"></a></li>
+                        <li><a href=""><img src="./../assets/img/twitter-svgrepo-com.svg" alt="" srcset=""
+                                    class="lg:w-[46px] xs:w-[32px]"></a></li>
+                        <li><a href=""><img src="./../assets/img/instagram-svgrepo-com.svg" alt="" srcset=""
+                                    class="lg:w-[46px] xs:w-[32px]"></a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="flex gap-4">
+            <div><img onclick="changeImage('./../assets/img/img1.png')" src="./../assets/img/img1.png" alt="" class="w-[46px] lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer"></div>
+            <div><img onclick="changeImage('./../assets/img/img2.png')" src="./../assets/img/img2.png" alt="" class="w-[46px] lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer"></div>
+            <div><img onclick="changeImage('./../assets/img/img3.png')" src="./../assets/img/img3.png" alt="" class="w-[46px] lg:transition-transform lg:duration-300 lg:hover:scale-110 lg:cursor-pointer"></div>
+        </div>
+    </main>
+</body>
+
+</html>
